@@ -1,0 +1,232 @@
+*, html{
+    padding: 0;
+    margin: 0;
+    box-sizing:border-box;
+}
+
+
+@font-face {
+    font-family: apple-garamond-reguler;
+    src: url(assets/fonts/AppleGaramond.woff);
+    font-weight: normal;
+    font-size: normal;
+}
+
+@font-face {
+    font-family: apple-garamond-light;
+    src: url(assets/fonts/AppleGaramond-Light.woff);
+    font-weight: normal;
+    font-size: normal;
+}
+
+
+@font-face {
+    font-family: BrookeS8;
+    src: url(assets/fonts/BrookeS8.woff);
+    font-weight: normal;
+    font-size: normal;
+}
+
+@font-face {
+    font-family: montserrat-bold;
+    src: url(assets/fonts/Montserrat-Bold.woff);
+    font-weight: normal;
+    font-size: normal;
+}
+
+@font-face {
+    font-family: montserrat-regular;
+    src: url(assets/fonts/Montserrat-Regular.woff);
+    font-weight: normal;
+    font-size: normal;
+}
+
+@font-face {
+    font-family: montserrat-medium;
+    src: url(assets/fonts/Montserrat-Medium.woff);
+    font-weight: normal;
+    font-size: normal;
+}
+
+
+@font-face {
+    font-family: bebas-neue-regular;
+    src: url(assets/fonts/BebasNeue-Regular.woff);
+    font-weight: normal;
+    font-size: normal;
+}
+
+@font-face {
+    font-family: helvetica-regular;
+    src: url(assets/fonts/Helvetica.woff);
+    font-weight: normal;
+    font-size: normal;
+}
+
+@font-face {
+    font-family: helvetica-light-condensed;
+    src: url(assets/fonts/Helvetica\ Light\ Condensed.woff);
+    font-weight: normal;
+    font-size: normal;
+}
+
+@font-face {
+    font-family: helvetica-neue-heavy;
+    src: url(assets/fonts/HelveticaNeueHv.woff);
+    font-weight: normal;
+    font-size: normal;
+
+}
+
+
+body {
+    background-color: #0ba13b;
+}
+
+nav{
+    z-index: 1000;
+    top: 0;
+    position: sticky;
+}
+
+nav ul{
+    padding-top:20px ;
+    display: flex;
+    list-style: none;
+    gap: 29px;
+    justify-content: center;
+    
+
+}
+nav ul li a{
+    text-decoration: none;
+    font-family: "helvetica-light-condensed";
+    color: #000000;
+    font-weight: lighter;
+    
+    
+}
+
+nav ul li .btn{
+    font-family: "helvetica-light-condensed";
+    color: #000000;
+    font-weight: lighter;
+    font-size: 16px;
+    border: none;
+    background-color: transparent;
+}
+
+nav ul li a:hover{
+    font-style: italic;
+}
+
+
+.text-main{
+    padding-top: 100px;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+
+}
+.text-main p{
+        font-size: 145px;
+    text-align: center;
+    font-family: "bebas-neue-regular";
+}
+
+.scroll-down{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+    margin-top: -110px;
+  }
+
+.card img{
+    width: 138px;
+    height: 185px;
+    margin-left: 77px;
+
+}
+
+.card .fotoZaidan{
+    rotate: 6deg;
+    left: 20px;
+}
+
+.card .fotoSarah{
+    z-index: 1;
+}
+
+.introduction-text{
+    text-align: left;
+    margin-left: 75px;    
+}
+
+.introduction-text p{
+    font-family: "bebas-neue-regular";
+    font-size: 85px;
+}
+
+
+.information .fotoSarah-2{
+    width: 364px;
+    height: auto;
+    margin-left: 70px;
+}
+
+.information h1{
+    font-family:"bebas-neue-regular";
+    font-size: 85px;
+}
+
+.information p{
+    font-family:"montserrat-regular";
+    font-size: 25px;
+}
+
+.information-text{
+    text-align: left;
+    position: absolute;
+    margin: 150px 188px 400px 508px;
+    align-items: center;
+}
+
+.information .fotoSarah-2{
+    margin-top: 75px;
+}
+.information {
+  display: flex;
+}
+.About h4{
+    font-family: "montserrat-bold";
+    font-size: 38px;
+}
+
+.About p{
+    font-family: "montserrat-medium";
+    font-size: 32px;
+    text-align: left;
+    justify-content: center;
+    margin-left: 650px;
+}
+
+.yapAbout{
+    margin-bottom: 50px;
+}
+
+.yapAbout2{
+    margin-bottom: 24px;
+}
+
+.About {
+    margin-top: 100px;
+  
+}
+
+.About .wrapper{
+    border-top: 1px solid black ;
+    width: 97%;
+    margin: 0 auto;     
+}
+

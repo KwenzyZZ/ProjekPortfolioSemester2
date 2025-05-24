@@ -91,14 +91,9 @@ nav ul li .btn{
     background-color: transparent;
 }
 
-nav ul li .btn:hover {
-    font-style:italic ;
-}
-
 nav ul li a:hover{
     font-style: italic;
 }
-
 
 .mid-bg-work{
     font-family: "montserrat-bold"; 
@@ -215,7 +210,7 @@ footer {
 }
 
 .footer-links li a:hover {
-  color: #797979;
+  font-style: italic;
 }   
 
 
@@ -228,3 +223,4 @@ footer {
   transform: scale(1.15);
   border-radius: 10px;
 }
+
