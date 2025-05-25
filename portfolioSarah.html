@@ -22,66 +22,71 @@
     </nav>
 
 <section class="main">
-    <div class="text-main">
+    <div class="text-main" data-aos="fade-in" delay ="300">
         <p>GET TO KNOW <br>ABOUT US MORE!</p>
     </div>
-    <div class="scroll-down">
-        <dotlottie-player
-        src="https://lottie.host/013113c4-2113-4430-9bf5-c20de61a03cb/rJ4q99bP5i.lottie"
-        background="transparent"
-        speed="1"
-        style="width: 40px; height: 300px"
-        loop
-        autoplay
-        ></dotlottie-player>
+    <div data-aos="fade-up" delay="700">
+        <div class="scroll-down" >
+            <dotlottie-player
+            src="https://lottie.host/013113c4-2113-4430-9bf5-c20de61a03cb/rJ4q99bP5i.lottie"
+            background="transparent"
+            speed="1"
+            style="width: 40px; height: 300px"
+            loop
+            autoplay
+            ></dotlottie-player>
+        </div>
     </div>
 </section>
     
     <section>
-    <div class="card">
-        <img src="assets/sarah/fotoSarah.jpg" class="fotoSarah">
-        <img src="assets/zaidan/fotoZaidan.JPG" class="fotoZaidan">
+    <div class="card" data-aos="fade-right" delay="700">
+        <a href="#">
+            <img src="assets/sarah/fotoSarah.jpg" class="fotoSarah">
+            <img src="assets/zaidan/fotoZaidan.JPG" class="fotoZaidan">
+        </a>
     </div>
 
-    <div class="introduction-text">
-        <p>I'am Sarah Sabila Khoerunnisa, 
+    <div class="introduction-text" data-aos="fade-in">
+        <p id="introduction-text-paragraph">I'am Sarah Sabila Khoerunnisa, 
             <br>one of the students of SMKN <br>
             Sumedang who is majoring in PPLG</p>
         </div>
 
-    <section class="information">
+    <section class="information" >
         <img src="assets/sarah/fotoSarah.jpg" class="fotoSarah-2">
         <div class="information-text">
-            <h1>INFORMATION</h1>
-            <p>Scroll Down to get more information about me</p>
+            <h1 data-aos="fade-down" delay="500">INFORMATION</h1>
+            <p data-aos="fade-up" delay="900">Scroll Down to get more information about me</p>
         </div>
     </section>
 
 
-<section class="About">
+<section class="About" >
     <div class="wrapper">
-<div class="about-title">
+<div class="about-title" data-aos="zoom-in-right">
     <h4>About me</h4>
 </div>
-    <div class="yapAbout">
+    <div class="yapAbout" data-aos="zoom-in-left">
         <p>I am a student at SMKN Sumedang. <br>
             I study in the PPLG <br>
             major, which is about making <br>
             websites and mobile apps.</p>
         </div>
         
-        <div class="yapAbout2">
+        <div class="yapAbout2" data-aos="zoom-in-left">
             <p>I can use some programming <br>
                 languages like Java, PHP, and JavaScript. <br>
                 I enjoy learning more about computers, design, and <br>
                 how to make cool things on the screen.</p>
             </div>
 </div>
+
     <div class="wrapper">
-    <h4>Tech Stack</h4>
+    <h4 data-aos="zoom-in-right">Tech Stack</h4>
     
     <div class="yap">
-        <p>Java <br>
+        <p data-aos="zoom-in-right">Java <br>
             JavaScript <br>
             PHP <br>
             C++ </p>
@@ -90,33 +95,49 @@
 </section>
 
 <section class="gallery">
-    <h3>My Works</h3>
-    <!-- <img src="assets/sarah/posterSarah.jpg" alt="">
-    <img src="assets/sarah/logoSarah.jpg" alt="">
-    <img src="assets/sarah/fotografiSarah1.jpg" alt="">
-    <img src="assets/sarah/kemasanSarah.jpg" alt="">
-    <img src="assets/sarah/fotografiSarah2.jpg" alt="">
-    <img src="assets/sarah/desainDepanBajuSarah.jpg" alt="">
-    <img src="assets/sarah/doodleArtSarah.jpg" alt="">
-    <img src="assets/sarah/desainBelakangBajuSarah.jpg" alt="">
-    <img src="assets/sarah/fotografiSarah3.jpg" alt=""> -->
+    <h3 data-aos="fade-in" delay="500">My Works</h3>
+    <div class="grid">
+        <img src="assets/sarah/posterSarah.jpg" alt="" data-aos="fade-up" delay="300">
+        <img src="assets/sarah/doodleArtSarah.jpg" alt="" data-aos="fade-up" delay="700">   
+        <img src="assets/sarah/fotografiSarah1.jpg" alt="" data-aos="fade-up" delay="600">
+        <img src="assets/sarah/fotografiSarah2.jpg" alt="" data-aos="fade-up" delay="700">
+        <img src="assets/sarah/logoSarah.jpg" alt="" data-aos="fade-up" delay="700">
+        <img src="assets/sarah/kemasanSarah.jpg" alt="" data-aos="fade-up" delay="500">
+        <img src="assets/sarah/desainDepanBajuSarah.jpg" alt="" data-aos="fade-up" delay="400">
+        <img src="assets/sarah/desainBelakangBajuSarah.jpg" alt="" data-aos="fade-up" delay="300">
+        <img src="assets/sarah/fotografiSarah3.jpg" alt="" data-aos="fade-up" delay="900">
+    </div>
 </section>
-<footer>
-    <p>Thank you for your curiosity.</p>
-    <p>VISIT US</p>
-    <p>Sumedang,</p>
-    <p>West Java,</p>
-    <p>Indonesia</p>
-    <p>Nenu</p>
-    <ul>
-        <li><a href="#">Home</a></li>
-        <li><a href="#">Portfolio</a></li>
-        <li><a href="#">Contact</a></li>
-    </ul>
-</footer>
 
-    </section>
-        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-        <script src="scriptPortfolio.js "></script>
+
+<footer>
+    <h1>Thank you for your curiosity.</h1>
+    <div class="footer-content">
+        <div class="location">
+            <h3>VISIT US</h3>
+            <p>Sumedang,</p>
+            <p>West Java,</p>
+            <p>Indonesia</p>
+        </div>
+        <div class="menu">
+            <h3>MENU</h3>
+            <ul class="link">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Portfolio</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </div>
+        <div class="email-for-message">
+            <h4>Please Leave a Message.</h4>
+            <input type="email" placeholder="Your Email" id="email">
+            <input type="text" placeholder="Your Message" id="message">
+            <button type="submit">Send</button>
+        </div>
+    </div>
+    </footer>
+    
+</section>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script src="scriptPortfolio.js "></script>
 </body>
 </html>

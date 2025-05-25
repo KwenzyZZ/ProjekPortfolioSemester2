@@ -4,7 +4,10 @@
     box-sizing:border-box;
 }
 
-
+@font-face {
+    font-family: "montserrat-light";
+    src: url(assets/fonts/Montserrat-Light.woff);
+}
 @font-face {
     font-family: apple-garamond-reguler;
     src: url(assets/fonts/AppleGaramond.woff);
@@ -78,9 +81,16 @@
 
 }
 
+@font-face {
+    font-family: "montserrat-semi-bold";
+    src: url(assets/fonts/Montserrat-SemiBold.woff);
+    font-weight: normal;
+    font-size: normal;
+}
+
 
 body {
-    background-color: #0ba13b;
+    background-color: #f5ffbe;
 }
 
 nav{
@@ -130,15 +140,15 @@ nav ul li a:hover{
 
 }
 .text-main p{
-        font-size: 145px;
+    font-size: 145px;
     text-align: center;
     font-family: "bebas-neue-regular";
 }
 
 .scroll-down{
-  display: flex;
-  justify-content: center;
-  align-items: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     margin-top: -110px;
   }
 
@@ -146,17 +156,54 @@ nav ul li a:hover{
     width: 138px;
     height: 185px;
     margin-left: 77px;
+    position: relative;
+    border-radius: 5px;
 
 }
 
 .card .fotoZaidan{
+    width: 130px;
+    height: 185;
     rotate: 6deg;
-    left: 20px;
+    left: -197px;
 }
 
 .card .fotoSarah{
     z-index: 1;
 }
+
+.fotoZaidan{
+    transition: all 0.5s ease;
+    transform: translateX(0);
+}
+
+.fotoSarah{
+    transition: all 0.5s ease;
+    transform: translateX(0);
+}
+.fotoSarah:hover ~ .fotoZaidan {
+    transform: translateX(50px) rotate(10deg);
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+.fotoSarah:hover{
+    transform:translateX(-20px) rotate(-5deg);
+}
+
+
+.fotoSarah-2 {
+    display: inline-block;
+    transform: scale(1);
+    border-radius: 5px;
+    transition: all 0.5s ease;
+}
+
+.fotoSarah-2:hover {
+    transform: scale(1.05);
+    border-radius: 20px;
+}
+
+
 
 .introduction-text{
     text-align: left;
@@ -230,3 +277,132 @@ nav ul li a:hover{
     margin: 0 auto;     
 }
 
+.gallery h3{
+    font-family: "helvetica-neue-heavy";
+    font-size: 92px;
+    margin-top: -220px;
+    margin-left: 20px;
+}
+
+.gallery{
+    column-count: 4;
+    column-gap: 20px;
+    
+}
+
+.gallery img {
+    width: 100%;
+    margin-bottom: 15px;
+    border-radius: 8px;
+    break-inside: avoid;
+}
+
+.About{
+    margin-bottom: 432px;
+}
+
+
+footer h1{
+    text-align: center;
+    font-family: "apple-garamond-reguler";
+    font-size: 70px;
+    color: #FFFFFF;
+    font-weight: lighter;
+    padding-top: 64px;
+}
+footer h3{
+    font-family: "montserrat-semi-bold";
+    font-size: 19px;
+    color: #FFFFFF;
+    padding-bottom: 37px;
+}
+
+footer ul li {
+    list-style: none;
+}
+footer p , .link     li a{
+    font-family: "montserrat-regular";
+    font-size: 27px;
+    color: #FFFFFF;
+    text-decoration: none;
+}
+footer ul li a:hover{
+    font-style: italic;
+
+}
+footer {
+    margin-top: 100px;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 470px;
+    background-color: #121212;
+    row-gap: 230px;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    text-align: left;
+}
+
+footer h4{
+    font-family: "montserrat-medium";
+    font-size: 19px;
+    color: white;
+    font-weight: lighter;
+}
+
+footer input{
+    border: flex;
+    border: 1px solid #ffffff;
+    background-color: transparent;
+    color: #ffffff;
+}
+
+footer input::placeholder{
+    color: #ffffff;
+    font-family: "montserrat-light";
+    padding-left: 5px;
+}
+
+footer .footer-content{
+    margin-top: 70px;
+}
+
+footer .location{
+    margin-left: 120px;
+}
+
+#email, #message{
+  width: 90%;
+  padding: 8px;
+  margin-top: 5px;
+  margin-bottom: 10px;
+  background-color: transparent;
+  border: 1px solid #666;
+  color: white;
+  font-size: 14px;
+}
+
+
+
+footer button{
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: white;
+    color: black;
+    border: none;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: bold;
+    border-radius: 5px; 
+    transition: all 0.3s ease, color 0.3s ease;
+}
+
+footer button:hover{
+    background-color: #000000;
+    color: #ffffff;
+    border-radius: 10px;
+}
