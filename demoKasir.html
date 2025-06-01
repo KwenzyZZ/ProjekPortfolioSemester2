@@ -1,0 +1,163 @@
+<html>
+<head>
+  <title>Aplikasi Kasir Sederhana</title>
+</head>
+<style>
+
+
+    body {
+  font-family: Arial, sans-serif;
+  background-color: #444444;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  width: 90%;
+  margin: 50px auto;
+  padding: 20px;
+  background-color: white;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+h1, h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.input-section {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.input-section input {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.input-section button {
+  padding: 10px 20px;
+  background-color: #283745;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+table th, table td {
+  padding: 15px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+table th {
+  background-color: #fef9fa;
+}
+
+table td:last-child {
+  text-align: center;
+}
+
+table button {
+  background-color: #dc3545;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.total-section {
+  text-align: right;
+  font-size: 24px;
+}
+
+</style>
+<body>
+  <div class="container">
+    <h1>Aplikasi Kasir</h1>
+    <div class="input-section">
+      <input type="text" id="Nama" placeholder="Nama Item" />
+      <input type="number" id="Banyak" placeholder="Banyak Item" />
+      <input type="number" id="Harga" placeholder="Harga Item" />
+      <button onclick="addItem()">Tambah Item</button>
+    </div>
+
+    <table>
+      <thead>
+        <tr>
+          <th>Nama Item</th>
+          <th>Banyak Item</th>
+          <th>Harga</th>
+          <th>Jumlah</th>
+          <th>Aksi</th>
+        </tr>
+      </thead>
+      <tbody id="itemList"></tbody>
+    </table>
+
+    <div class="total-section">
+      <h2>Total: Rp <span id="totalPrice">0</span></h2>
+    </div>
+  </div>
+
+  <script>
+    let total = 0;
+    
+function addItem() {
+  // Mengambil nilai dari input
+  const Nama = document.getElementById("Nama").value;
+  const Banyak = parseInt(document.getElementById("Banyak").value);
+  const Harga = parseInt(document.getElementById("Harga").value);
+  
+  const subTotal = Banyak * Harga;
+  // Validasi input
+  if (Nama == '' || Banyak == '' || Harga == '' || isNaN(Harga) || Harga <= 0) {
+      alert("Masukkan nama item, jumlah, dan harga yang valid!");
+      return;
+    }
+    
+    const itemList = document.getElementById("itemList");
+    const row = document.createElement("tr");
+    
+    row.innerHTML = `
+    <td>${Nama}</td>
+    <td>${Banyak}</td>
+    <td>${Harga}</td>
+    <td>Rp ${parseInt(subTotal).toLocaleString()}</td>
+    <td><button onclick="deleteItem(this, ${subTotal})">Hapus</button></td>
+    `;
+    itemList.appendChild(row);
+    
+    total += parseInt(subTotal);
+    document.getElementById('totalPrice').innerText = total.toLocaleString(); 
+    
+}
+    //Bersihkan Input
+    document.getElementById('Nama').value = '';
+    document.getElementById('Harga').value = '';
+    document.getElementById('Banyak').value = '';
+
+//Fungsi hapus ini dipanggil oleh tombol hapus
+function deleteItem(button, price) {
+  const row = button.parentElement.parentElement; //mencari element yang mengandung <button>
+
+  row.remove(); //hapus baris tersebut
+  total -= parseInt(price); //kurangi nilai total
+  document.getElementById('totalPrice').innerText = total.toLocaleString();
+}
+  </script>
+</body>
+</html>

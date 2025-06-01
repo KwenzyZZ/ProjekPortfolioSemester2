@@ -2,6 +2,8 @@
     padding: 0;
     margin: 0;
     box-sizing:border-box;
+
+
 }
 
 @font-face {
@@ -87,14 +89,12 @@
     font-weight: normal;
     font-size: normal;
 }
-
 @font-face {
     font-family: "helvetica-light-regular";
     src: url(assets/fonts/helvetica-light.woff);
     font-weight: normal;
     font-size: normal;
 }
-
 
 body {
     background-color: #f5ffbe;
@@ -121,8 +121,7 @@ nav ul li a{
     font-family: "helvetica-light-condensed";
     color: white;
     font-weight: lighter;
-    font-size: 22px;
-    
+        font-size: 22px;
     
 }
 
@@ -170,32 +169,32 @@ nav ul li a:hover{
 
 }
 
-.card .fotoZaidan{
+.card .fotoSarah{
     width: 130px;
     height: 185;
     rotate: 6deg;
     left: -197px;
 }
 
-.card .fotoSarah{
+.card .fotoZaidan{
     z-index: 1;
-}
-
-.fotoZaidan{
-    transition: all 0.5s ease;
-    transform: translateX(0);
 }
 
 .fotoSarah{
     transition: all 0.5s ease;
     transform: translateX(0);
 }
-.fotoSarah:hover ~ .fotoZaidan {
+
+.fotoZaidan{
+    transition: all 0.5s ease;
+    transform: translateX(0);
+}
+.fotoZaidan:hover ~ .fotoSarah {
     transform: translateX(50px) rotate(10deg);
     box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.3);
 }
 
-.fotoSarah:hover{
+.fotoZaidan:hover{
     transform:translateX(-20px) rotate(-5deg);
 }
 
@@ -252,7 +251,12 @@ nav ul li a:hover{
     margin-top: 75px;
 }
 .information {
-  display: flex;
+    display: flex;
+}
+
+
+.About{
+    margin-bottom: 100px;
 }
 .About h4{
     font-family: "montserrat-bold";
@@ -286,29 +290,7 @@ nav ul li a:hover{
     margin: 0 auto;     
 }
 
-.gallery h3{
-    font-family: "helvetica-neue-heavy";
-    font-size: 92px;
-    margin-top: -220px;
-    margin-left: 20px;
-}
 
-.gallery{
-    column-count: 3;
-    column-gap: 20px;
-    
-}
-
-.gallery img {
-    width: 100%;
-    margin-bottom: 15px;
-    border-radius: 8px;
-    break-inside: avoid;
-}
-
-.About{
-    margin-bottom: 432px;
-}
 .portfolio-text-container h2{
     font-family: "helvetica-neue-heavy";
     font-size: 73px;
@@ -477,7 +459,6 @@ nav ul li a:hover{
 .projects-code a:hover{
     color: #4AA9FC;
 }
-
 footer h1{
     text-align: center;
     font-family: "apple-garamond-reguler";
@@ -496,6 +477,7 @@ footer h3{
 footer ul li {
     list-style: none;
 }
+
 footer .location p , .link li a{
     font-family: "montserrat-regular";
     font-size: 27px;
@@ -550,7 +532,6 @@ footer input::placeholder, textarea::placeholder {
     padding-left: 5px;
 }
 
-
 footer .footer-content{
     margin-top: 70px;
 }
@@ -570,6 +551,8 @@ footer .location{
   font-size: 14px;
 }
 
+
+
 footer button{
     margin-top: 10px;
     padding: 10px 20px;
@@ -588,3 +571,4 @@ footer button:hover{
     color: #ffffff;
     border-radius: 10px;
 }
+
