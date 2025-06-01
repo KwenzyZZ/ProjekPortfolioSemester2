@@ -1,0 +1,1 @@
+Web ini dirancang untuk menampilkan karya, keahlian, dan perjalanan belajar saya dan teman saya dalam bidang pemrograman, dam desain. Website ini juga mencakup fitur interaktif seperti animasi saat scroll, galeri proyek, serta form kontak yang langsung terhubung ke email.
