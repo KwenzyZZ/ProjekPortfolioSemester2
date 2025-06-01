@@ -155,7 +155,7 @@ function deleteItem(button, price) {
   const row = button.parentElement.parentElement; //mencari element yang mengandung <button>
 
   row.remove(); //hapus baris tersebut
-  total -= parseInt(price); //kurangi nilai total
+  total -= parseInt(price); //kurangi nilai total   
   document.getElementById('totalPrice').innerText = total.toLocaleString();
 }
   </script>
