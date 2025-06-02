@@ -1,141 +1,141 @@
 *, html{
-    padding: 0;
-    margin: 0;
-    box-sizing:border-box;
+padding: 0;
+margin: 0;
+box-sizing:border-box;
 }
 
 @font-face {
-    font-family: helvetica-light-condensed;
-    src: url(assets/fonts/Helvetica\ Light\ Condensed.woff);
-    font-weight: normal;
-    font-size: normal;
+font-family: helvetica-light-condensed;
+src: url(assets/fonts/Helvetica\ Light\ Condensed.woff);
+font-weight: normal;
+font-size: normal;
 }
 
 @font-face {
-    font-family: apple-garamond-reguler;
-    src: url(assets/fonts/AppleGaramond.woff);
-    font-weight: normal;
-    font-size: normal;
+font-family: apple-garamond-reguler;
+src: url(assets/fonts/AppleGaramond.woff);
+font-weight: normal;
+font-size: normal;
 }
 
 @font-face {
-    font-family: apple-garamond-light;
-    src: url(assets/fonts/AppleGaramond-Light.woff);
-    font-weight: normal;
-    font-size: normal;
+font-family: apple-garamond-light;
+src: url(assets/fonts/AppleGaramond-Light.woff);
+font-weight: normal;
+font-size: normal;
 }
 
 
 @font-face {
-    font-family: BrookeS8;
-    src: url(assets/fonts/BrookeS8.woff);
-    font-weight: normal;
-    font-size: normal;
+font-family: BrookeS8;
+src: url(assets/fonts/BrookeS8.woff);
+font-weight: normal;
+font-size: normal;
 }
 
 @font-face {
-    font-family: montserrat-bold;
-    src: url(assets/fonts/Montserrat-Bold.woff);
-    font-weight: normal;
-    font-size: normal;
+font-family: montserrat-bold;
+src: url(assets/fonts/Montserrat-Bold.woff);
+font-weight: normal;
+font-size: normal;
 }
 
 @font-face {
-    font-family: bebas-neue-regular;
-    src: url(assets/fonts/BebasNeue-Regular.woff);
-    font-weight: normal;
-    font-size: normal;
+font-family: bebas-neue-regular;
+src: url(assets/fonts/BebasNeue-Regular.woff);
+font-weight: normal;
+font-size: normal;
 }
 
 @font-face {
-    font-family: helvetica-regular;
-    src: url(assets/fonts/Helvetica.woff);
-    font-weight: normal;
-    font-size: normal;
+font-family: helvetica-regular;
+src: url(assets/fonts/Helvetica.woff);
+font-weight: normal;
+font-size: normal;
 }
 
 body {
-    background-color: #F3F3EF;
+background-color: #F3F3EF;
 }
 
 nav{
-    z-index: 1000;
-    top: 0;
-    position: sticky;
-    mix-blend-mode: difference;
+z-index: 1000;
+top: 0;
+position: sticky;
+mix-blend-mode: difference;
 }
 
 nav ul{
-    padding-top:20px ;
-    display: flex;
-    list-style: none;
-    gap: 29px;
-    justify-content: center;
-    
+padding-top:20px ;
+display: flex;
+list-style: none;
+gap: 29px;
+justify-content: center;
+
 
 }
 nav ul li a{
-    text-decoration: none;
-    font-family: "helvetica-light-condensed";
-    color: white;
-    font-weight: lighter;
-        font-size: 22px;
-    
+text-decoration: none;
+font-family: "helvetica-light-condensed";
+color: white;
+font-weight: lighter;
+    font-size: 22px;
+
 }
 
 nav ul li .btn{
-    font-family: "helvetica-light-condensed";
-    color: white;
-    font-weight: lighter;
-    font-size: 16px;
-    border: none;
-    background-color: transparent;
+font-family: "helvetica-light-condensed";
+color: white;
+font-weight: lighter;
+font-size: 16px;
+border: none;
+background-color: transparent;
 }
 
 nav ul li a:hover{
-    font-style: italic;
+font-style: italic;
 }
 
 .mid-bg-work{
-    font-family: "montserrat-bold"; 
-    font-size: 191px;
-    text-align: center;
-     padding-top: 125px;
-     padding-bottom: 40px;
-     position: sticky;
-    top: -50px;
+font-family: "montserrat-bold"; 
+font-size: 191px;
+text-align: center;
+    padding-top: 125px;
+    padding-bottom: 40px;
+    position: sticky;
+top: -50px;
 }
 
 .header-work{
-    font-family: "bebas-neue-regular";
-    font-size: 59px;
+font-family: "bebas-neue-regular";
+font-size: 59px;
 }
 
 .content-work{
-    font-family: "helvetica-regular";
-    font-size: 29px;
-    
+font-family: "helvetica-regular";
+font-size: 29px;
+
 } 
 
 .container{
-    display: flex;
-    justify-content : center;
+display: flex;
+justify-content : center;
 }
 
 .content-text-work{
-    padding-top: 80px;
-    padding-left: 175px;
-   
+padding-top: 80px;
+padding-left: 175px;
+
 }
 .greetings{
-     font-family: "helvetica-regular";
-     font-size: 214px;
-     padding-top: 100px;
+    font-family: "helvetica-regular";
+    font-size: 214px;
+    padding-top: 100px;
 }
 .greetings  #hello, #we-are, #sarah , #zaidan {
-    border-bottom: 4px solid black ;
-    width: 90%;
-    margin: 0 auto;
+border-bottom: 4px solid black ;
+width: 90%;
+margin: 0 auto;
 }
 
 .greetings #we-are{
@@ -143,85 +143,85 @@ padding-left: 200px;
 }
 
 .greetings #sarah{
-    padding-left: 350px;
+padding-left: 350px;
 }
 
 .greetings #zaidan{
-    border: none;
+border: none;
 }
 
 .lastest-work .zaidan{
-    width: 380px;
-    height: 269px;
-    border-radius: 5px;
+width: 380px;
+height: 269px;
+border-radius: 5px;
 }
 
 .lastest-work .sarah{
-    width: 269px;
-    height: 380px;
-    border-radius: 5px;
+width: 269px;
+height: 380px;
+border-radius: 5px;
 }
 
 
 .lastest-work{  
-    display: flex;
-    justify-content : center;
-    align-items: center;
-    flex-direction: column;
-    gap: 514px;
-    position: relative;
+display: flex;
+justify-content : center;
+align-items: center;
+flex-direction: column;
+gap: 514px;
+position: relative;
 }
 
 .lastest-work{
-    transform: translateY(30px);
+transform: translateY(30px);
 }
 
 .lastest-work-hover{
-    width: 193px;
-    height: 48px;
-    z-index: 10000;
+width: 193px;
+height: 48px;
+z-index: 10000;
 }
 
 footer {
-  color: #000000;
-  text-align: center;
-  padding: 40px 20px;
-  font-family: "helvetica-light-condensed";
-  font-size: 16px;
+color: #000000;
+text-align: center;
+padding: 40px 20px;
+font-family: "helvetica-light-condensed";
+font-size: 16px;
 }
 
 .footer-content {
-  max-width: 800px;
-  margin: 0 auto;
+max-width: 800px;
+margin: 0 auto;
 }
 
 .footer-links {
-  list-style: none;
-  display: flex;
-  justify-content: center;
-  gap: 20px;
-  padding: 0;
-  margin-top: 15px;
+list-style: none;
+display: flex;
+justify-content: center;
+gap: 20px;
+padding: 0;
+margin-top: 15px;
 }
 
 .footer-links li a {
-  color: #000000;
-  text-decoration: none;
-  transition: color 0.3s ease;
+color: #000000;
+text-decoration: none;
+transition: color 0.3s ease;
 }
 
 .footer-links li a:hover {
-  font-style: italic;
+font-style: italic;
 }   
 
 
 .lastest-work .zaidan, .sarah {
-  transform: scale(1);
-  border-radius: 5px;
-  transition: transform 0.3s ease, border-radius 0.3s ease;
+transform: scale(1);
+border-radius: 5px;
+transition: transform 0.3s ease, border-radius 0.3s ease;
 }
 .lastest-work .zaidan:hover, .sarah:hover{
-  transform: scale(1.15);
-  border-radius: 10px;
+transform: scale(1.15);
+border-radius: 10px;
 }
 
