@@ -7,7 +7,6 @@ const projectsCode = document.querySelector(".projects-code");
 
 buttons.forEach((btn, index) => {
   btn.addEventListener("click", () => {
-    // Toggle active class tombol
     buttons.forEach(b => b.classList.remove("active"));
     btn.classList.add("active");
 slider.style.left = index === 0 ? "0" : "50%";
